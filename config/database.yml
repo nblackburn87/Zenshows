@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  database: Zenshows_development
+
+test:
+  adapter: postgresql
+  database: Zenshows_test
+
+production:
+  database: Zenshows_production
+  username: Zenshows
+  password: <%= ENV['ZENSHOWS_DATABASE_PASSWORD'] %>
