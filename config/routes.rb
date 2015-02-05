@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root to: "home#index"
+  devise_for :users
+  root to: "pages#home"
+
+  match '/home', { :via => :get, :to => 'pages#home' }
 end
