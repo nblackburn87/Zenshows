@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <%= link_to "Edit My Profile", edit_user_registration_path(@user), :class => "btn btn-default" %>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 profile">
+        <div class="col-md-12 profile">
+          <div class="row">
+            <div class="col-md-3">
+              <img alt="Default Avatar" src="../assets/test.png">
+            </div>
+            <div class="col-md-6">
+              <p><%= @user.email %></p>
+              <p><%= @user.zipcode %></p>
+            </div>
+            <div class="col-md-3" id="rate">
+              <h4>$/hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id="overview">
+            <h4>Overview</h4>
+            <hr>
+            <p>Test Text!</p>
+          </div>
+          <div id="feedback">
+            <h4>Work History &amp; Feedback</h4>
+            <hr>
+          </div>
+          <div id="education">
+            <h4>Education</h4>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 profile profile-right">
+        <div id="work-history">
+          <p>Work History</p>
+          <hr>
+        </div>
+        <div id="availability">
+          <p>Availability</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal">
+  <p>Test Modal</p>
+</div>
