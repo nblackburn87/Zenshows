@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   match '/home', { :via => :get, :to => 'pages#home' }
 
-  resources :users, only: [:index, :edit, :show]
+  resources :users, only: [:index, :edit, :update, :show]
 end
